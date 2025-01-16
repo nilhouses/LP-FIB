@@ -1,0 +1,11 @@
+Primer test: Comprova la no-col·lisio d'una variable definida al let amb una altra global (x)
+
+Valor inicial de la constant x: 5
+LLISTA: ( 8 10 )
+La variable global x: 5 conserva el seu valor
+
+Segon test: comprova el correcte funcionament de variables globals i locals en lets superposats
+
+x LOCAL primera prova: 25
+x LOCAL segona prova: 8
+La variable global x: 5 conserva el seu valor

@@ -1,0 +1,26 @@
+Ara cal afegir funcions
+
+    function sm(x, y)
+        return x + y
+    end
+    main
+        a := 1 + 2 
+        b := a * 2
+        write sm(a, b)
+    end
+
+també ens donen aquesta info:
+
+
+    La taula de símbols pot ser una pila de diccionaris.
+
+    En visitar la declaració de funcions, per a cada funció, hem de guardar en una estructura:
+
+    El seu nom (id)
+    La seva llista de paràmetres (ids)
+    El contexte (node de l'AST) del seu bloc de codi (per a poder fer un self.visit(bloc) en trobar la crida)
+    S'ha de gestionar el return en cascada.
+
+Tocara implementar visitCallFunc i visitDeclaration a part de crear noves ED per gestionar la memoria 
+
+també main

@@ -1,0 +1,43 @@
+ 
+et donen:
+
+"
+// Gramàtica per expressions senzilles
+grammar exprs;
+root : expr             // l'etiqueta ja és root
+     ;
+expr : expr '+' expr    # suma
+     | NUM              # numero
+     ;
+NUM : [0-9]+ ;
+WS  : [ \t\n\r]+ -> skip ;
+
+"
+
+i demanen
+"
+
+Afegiu a la gramàtica els operadors de:
+
+    resta
+
+    multiplicació
+
+    divisió
+
+    potència
+
+Tingueu en compte:
+
+    la precedència d'operadors
+
+    l'associativitat a la dreta de la potència
+
+"
+COMENTARIS
+//  Compilado 
+    antlr4 -Dlanguage=Python3 -no-listener exprs.g4
+//  APUNTS
+// * representa 0..*
+// + representa 1..*
+

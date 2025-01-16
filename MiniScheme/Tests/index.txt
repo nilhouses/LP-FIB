@@ -1,0 +1,21 @@
+Aquest directori conté 13 tests que funcionen com a joc de proves de l'intèrpret:
+- Cond
+- DefineVariables
+- Factorial
+- Fibonacci
+- Fraccions
+- If
+- Let
+- Llistes
+- OperadorsAritmetics
+- OperadorsBool
+- OrdreSuperior
+- Read
+- SumaLlista
+
+Tots tenen els fitxers:
+    -  .scm (codi de la prova i instruccions d'ús)
+    -  .out (sortida esperada)
+I Read i Fraccions tenen també un fitxer:
+    -  .inp (entrada a esperada) 
+que és necessari per comprovar el correcte funcionament del test en qüestió.

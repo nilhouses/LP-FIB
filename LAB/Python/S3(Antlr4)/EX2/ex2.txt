@@ -1,0 +1,30 @@
+introdueixen visitors (diapo 12/27),
+generar la class base del visitador: 
+
+    antlr4 -Dlanguage=Python3 -no-listener -visitor exprs.g4 
+
+que s'anomena "exprsVisitor.py"
+
+et donen una classe TreeVisitor.py 
+per mostrar l'arbre
+
+et donen també, l'script modificat amb aquesta classe
+
+
+
+Et demanen que adaptis el teu exercici 1 als nous canvis:
+
+hauries d'obtenir amb input 2 + 3 + 4
+
+👉
++
+  +
+    2
+    3
+  4
+
+
+afegir el visitor i provar-ho:
+
+  antlr4 -Dlanguage=Python3 -visitor exprs.g4
+  python3 exprs.py

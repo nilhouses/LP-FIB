@@ -1,0 +1,26 @@
+demanen
+
+Definiu una gramàtica i el seu mecanisme d'avaluació/execució per a quelcom tipus:
+
+    x := 3 + 5
+    write x
+    y := 3 + x + 5
+    write y
+
+Nota: es pot utilitzar un diccionari com a taula de símbols.
+
+gramatica NOVA
+
+    M'ha de permetre assignar expressions a variables
+
+    NOVA GRAMATICA
+        exprs.g4
+
+    NOU EVALVISITOR
+        EvalVisitor
+    
+    NOU EXPRS.py
+        expr.py
+
+
+    

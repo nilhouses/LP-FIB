@@ -1,0 +1,16 @@
+function skere(n)
+    if n > 0 then
+        write 1
+        return 1
+    end
+    if n >= 0 then
+        write 2
+        return 2
+    end
+    write 3
+    return 3
+end
+
+main
+    write skere(4)
+end

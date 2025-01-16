@@ -1,0 +1,18 @@
+demanen
+
+c := 0
+b := c + 5
+if c = 0 then
+    write b
+end
+
+gramatica ha d'acceptar if i variables com a numeros dins d'expressions 
+
+
+antlr4 -Dlanguage=Python3 -no-listener -visitor exprs.g4
+
+
+python3 exprs.py
+
+
+Hem canviat una barbaritat de coses. S'enten

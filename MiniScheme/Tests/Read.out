@@ -1,0 +1,5 @@
+Introdueix dos valors enters (nombre 1 'intro' nombre 2): La suma és: 11
+Introdueix dos valors booleans separats (bool 'intro' bool): primer bool Cert!
+segon bool Fals :(
+Introdueix una cadena de text: Cadena: cadena de text
+Introdueix una llista d'enters: La suma de la llista ( 1 2 3 4 5 ) es: 15

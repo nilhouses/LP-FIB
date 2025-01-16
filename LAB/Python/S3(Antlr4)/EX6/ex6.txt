@@ -1,0 +1,9 @@
+Demanen el següent:
+
+Exploreu que passa si realitzem l'exercici anterior sense el token end.
+
+
+Obtenim l'error
+
+line 5:0 extraneous input '<EOF>' expecting {'write', 'if', 'end', VAR}
+5

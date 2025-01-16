@@ -1,0 +1,16 @@
+ara ens demana fer una classe EvalVisitor que ens calculi la suma directament, vamos
+i ens dona "class EvalVisitor(exprsVisitor):
+    def visitRoot(self, ctx):
+        [expressio] = list(ctx.getChildren())
+        print(self.visit(expressio))
+    def visitSuma(self, ctx):
+        [expressio1, operador, expressio2] = list(ctx.getChildren())
+        return self.visit(expressio1) + self.visit(expressio2)
+    def visitNumero(self, ctx):
+        [numero] = list(ctx.getChildren())
+        return int(numero.getText())"
+    
+
+volen 
+
+3 + 4 + 5 👉 12

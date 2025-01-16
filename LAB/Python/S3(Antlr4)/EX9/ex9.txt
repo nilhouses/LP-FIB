@@ -1,0 +1,12 @@
+CANVIS
+exprs.g4 -->  accepta funcions sense paràmetres
+EvalVisitor.py -->  declaracions de funcions (visitFunctionDeclaration) 
+                    crides a funcions (visitFuncCall).
+
+he modificat el driver
+
+
+EXECUTAR:
+
+    java -jar antlr-4.13.2-complete.jar -Dlanguage=Python3 -no-listener -visitor exprs.g4
+

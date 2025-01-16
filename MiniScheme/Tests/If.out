@@ -1,0 +1,6 @@
+x: #t
+y: #f
+or x y: Cert!
+and x y: Fals
+not x: Fals
+not y: Cert!

@@ -1,0 +1,8 @@
+l: ( pepa 1 #f )
+Primer element: pepa
+Resta dels elements: ( 1 #f )
+Element x 9
+Afegim l'element x davant de la llista l: ( 9 pepa 1 #f )
+Creem la llista '(1,2,3) a partir de cons annidats: ( 1 2 3 )
+La llista l es buida? no
+La llista '() es buida? si
