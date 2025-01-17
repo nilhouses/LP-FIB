@@ -1,5 +1,5 @@
 # LP
-This repository contains exercises and a project for the Programming Languages course at FIB-UPC:
+This repository contains exercises and a project for the Programming Languages (LP) course at FIB-UPC:
 
 - TreballDirigit.pdf -> Project that briefly documents some Java characteristics. 
 - MiniScheme -> Scheme interpreter coded in an Antlr4 grammar and Python visitors (Graded 7/10).
