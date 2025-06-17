@@ -1,7 +1,5 @@
 #Funcions d'ordre superior
 
-# ATENCIO, a reduce es com si els paràmetres estéssin donats la volta, primer x i després acc
-
 from functools import reduce
 
 def evens_product(L):

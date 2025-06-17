@@ -1,8 +1,6 @@
 -- P29040
-
+------------------------------------------------------
 -- INSERTION SORT
-
--- RECORDA, PER RECÓRRER UNA LLISTA PUC FER QUE ENTRI COM A PARÀMETRE DE MANERA x:xs DIRECTAMENT
 
 insert :: [Int] -> Int -> [Int]--llista ordenada
 insert [] x = [x]
@@ -17,7 +15,7 @@ isort (x:xs) = insert (isort xs) x
 --SELECTION SORT
 
 remove :: [Int] -> Int -> [Int]
-remove [] _ = [] --el cas base imprescindible
+remove [] _ = []
 remove (x:xs) n
     | x == n = xs
     | otherwise =  x:remove xs n
@@ -44,7 +42,6 @@ msort llista = merge (msort l) (msort r)
         l = take n llista
         r = drop n llista
         n = div (length llista) 2
---dividir i vèncer literalment
 ---------------------------------------------------------
 --QUICK SORT
 qsort :: [Int] -> [Int]
@@ -52,13 +49,13 @@ qsort [] = []
 qsort (pivot:l) = qsort menors ++ [pivot] ++ qsort majors
     where
         menors = [x | x <- l, x < pivot]
-        majors = [x | x <- l, x >= pivot] --notació interessant
+        majors = [x | x <- l, x >= pivot]
 ------------------------------------------------------------
-genQsort ::Ord a => [a] -> [a] -- Forma general!
+genQsort ::Ord a => [a] -> [a]
 genQsort [] = []
 genQsort (pivot:l) = genQsort menors ++ [pivot] ++ genQsort majors
     where
         menors = [x | x <- l, x < pivot]
-        majors = [x | x <- l, x >= pivot] --notació interessant
+        majors = [x | x <- l, x >= pivot]
 
 

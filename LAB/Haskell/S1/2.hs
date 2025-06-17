@@ -1,4 +1,3 @@
- 
 myLength :: [Int] -> Int
 myLength [] = 0
 myLength n = 1 + myLength(tail n)

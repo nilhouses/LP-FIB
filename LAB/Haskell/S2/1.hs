@@ -6,25 +6,25 @@ eql l1 l2
     | length l1 /= length l2 = False
     | otherwise = and(zipWith (==)l1 l2)
 ---------------------------------------------------
---multiplica la llista d'entrada 
+-- Multiplica la llista d'entrada 
 prod :: [Int]->Int
 prod llista = foldl (*) 1 llista
 ---------------------------------------------------
---multiplica NOMÉS els elements parells de la llista d'entrada
+-- Multiplica NOMÉS els elements parells de la llista d'entrada
 prodOfEvens :: [Int] -> Int 
 prodOfEvens = prod.filter even
---Jo m'havia complicat:
+-- Alternativament:
 --prodOfEvens llista = foldl (*) 1 parells
     --where parells = filter even llista
 ---------------------------------------------------
- -- retorna totes les potències de 2 
+ -- Retorna totes les potències de 2 
 powersOf2 :: [Int]
 powersOf2 = iterate (*2) 1
 ---------------------------------------------------
 scalarProduct :: [Float] -> [Float] -> Float --Retorna el producte escalar de les dues llistes
 scalarProduct a b = foldl (+) 0 $ zipWith (*) a b
 
--- Jo també m'havia complicat
+-- Alternativament:
 --scalarProduct l1 l2 = foldl (+) 0 productes --(sumo els productes de les llistes)
     --where productes = zipWith (*) l1 l2
 

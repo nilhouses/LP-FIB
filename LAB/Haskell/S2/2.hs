@@ -1,19 +1,18 @@
 --P31745
 ---------------------------------------------------
---Passa una matriu (llista de llistes) a una sola llista
+-- Passa una matriu (llista de llistes) a una sola llista
 flatten :: [[Int]] -> [Int]
-flatten = foldl (++) []--més curt
---EL QUE HAVIA FET JO ->flatten llista = foldl (++) [] llista
---El primer element el concateno amb una llista buida i la resta 
---la concateno amb l'acumulaciód e concatenacions anteriors
+flatten = foldl (++) []
+-- Alternativament:
+--flatten llista = foldl (++) [] llista
 ---------------------------------------------------
---Retorna la llargada d'una string
+-- Retorna la llargada d'una string
 myLength :: String -> Int
 myLength [] = 0
 myLength cadena = last (zipWith (\x y -> y) cadena llistaEnters)
     where llistaEnters = iterate (+1) 1
 --Vaig "posant" l'string al costat d'una llista d'enters [1,2,3,...]
--- Afer zipWith de cadena llistaEnters em queda [1,2,3,4,5], pel que 
+--Al fer zipWith de cadena llistaEnters em queda [1,2,3,4,5], pel que 
 --la paraula té llargada 5 i em quedo el 5 (last) 
 ----------------------------------------------------
 --Dona la volta a una llista (myReverse = reverse)
@@ -27,7 +26,7 @@ countIn :: [[Int]] -> Int -> [Int]
 countIn llista x = map (func x) llista
     where 
         func x list = length (filter (== x) list)
--- al map -> a cada subllista d ela llsita li aplica func x, la qual compta la llargada 
+--al map -> a cada subllista d ela llsita li aplica func x, la qual compta la llargada 
 --de la llista composta només pels elements filtrats de la llista original.
 ----------------------------------------------------
 --Retorna la primera paraula d'un string

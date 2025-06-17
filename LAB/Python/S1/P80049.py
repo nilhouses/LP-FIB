@@ -3,7 +3,7 @@ from functools import reduce
 
 def count_unique(L):
     return len(set(L))
-    #MASSA PAJA
+    # Alternativament, hardcodejat:
     #u = 0
     #unics = []
     #for e in L:
@@ -16,7 +16,7 @@ def remove_duplicates(L):
     return set(L)
 
 def flatten(L):
-    return reduce(lambda acc, l: acc+l , L,[]) #donat acc i l els concatena, i passo els parámetres
+    return reduce(lambda acc, l: acc+l , L,[]) 
 
 def flatten_rec(L):
     f = lambda acc, l: acc+flatten_rec(l) if isinstance(l,list) else acc + [l]
