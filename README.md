@@ -3,9 +3,9 @@ This repository contains exercises and a project for the Programming Languages (
 
 ## Contents
 
-- `TreballDirigit.pdf`: Project that briefly documents some Java characteristics
-- `MiniScheme`: [Scheme](https://www.scheme.org/) interpreter coded in Python using Antlr4 grammar, its README explains further. 
-- `LAB`: Haskell, Python and Antlr exercises from the [Jutge](https://jutge.org/) webpage.
+- `TreballDirigit.pdf`: Project that briefly documents some of Java's characteristics.
+- `MiniScheme`: [Scheme](https://www.scheme.org/) interpreter implemented in Python using an ANTLR4 grammar. See its README for details.
+- `LAB`: Exercises in Haskell, Python, and ANTLR from the Jutge online judge platform.
 
 ## Requirements
 
@@ -17,18 +17,19 @@ To run the code in this repository, you'll need the following tools installed:
 
 ### λ Haskell
 
- You can use [GHCup](https://www.haskell.org/ghcup/) to install Haskell components:
+ You can use [GHCup](https://www.haskell.org/ghcup/) to install Haskell components.
 
 ### 🐍 Python 
 
 Install Python depending on your OS:
 
-- **Ubuntu/Debian**
+- **Linux**
   ```bash
   sudo apt update
   sudo apt install python3 python3-pip
   ```
-- **Windows** Download the installer from python.org
+- **Windows** </br>
+  Download the installer from python.org
 
 ### 📦 Antlr4
 
@@ -39,14 +40,15 @@ After installing python, you can get [ANTLR4](https://www.antlr.org/about.html),
     pip install antlr4-python3-runtime
 ```
 
-## License
+## GNU GENERAL PUBLIC LICENSE  
+Version 3, June 29, 2007
 
-This project is licensed under the [MIT License](https://opensource.org/license/mit/).
+© 2024 Nil Casas Duatis
 
-© 2025 Nil Casas Duatis
+This software is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is provided to do so, subject to the following conditions:
+This software is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+You can obtain a copy of the GNU General Public License at: https://www.gnu.org/licenses/gpl-3.0.html
 
-The Software is provided without any warranty of any kind, either express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, and non-infringement. In no event shall the authors or copyright holders be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the Software or the use or other dealings in the Software.
+If you modify this software and distribute it, you must include a statement indicating that you have made changes, and you must not conceal that the software has been modified.
